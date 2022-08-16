@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baper Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="w-screen h-screen flex justify-center items-center">
+      <section class="w-9/12 text-white grid grid-rows-3 gap-5">
+        <div class="grid grid-cols-1 bg-green-600 p-5 text-center rounded-lg">
+          <div>
+            <h3 class="text-3xl">Total money</h3>
+            <h1 class="text-4xl">$ <span id="total-amount">5000</span></h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-4 text-center rounded-lg gap-5">
+          <div class="bg-violet-500 p-5 rounded-lg">
+            <h3 class="text-3xl">Total Deposit Money</h3>
+            <h1 class="text-4xl">$ <span id="total-deposit">00</span></h1>
+          </div>
+          <div class="bg-sky-400 p-5 rounded-lg">
+            <h3 class="text-3xl">Current Deposit Money</h3>
+            <h1 class="text-4xl">$ <span id="current-deposit">00</span></h1>
+          </div>
+          <div class="bg-fuchsia-400 p-5 rounded-lg">
+            <h3 class="text-3xl">Total Withdraw Money</h3>
+            <h1 class="text-4xl">$ <span id="total-withdraw">00</span></h1>
+          </div>
+          <div class="bg-rose-400 p-5 rounded-lg">
+            <h3 class="text-3xl">Current Withdraw Money</h3>
+            <h1 class="text-4xl">$ <span id="current-withdraw">00</span></h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 rounded-lg gap-5">
+          <div
+            class="bg-cyan-700 p-5 rounded-lg flex justify-center items-center gap-2"
+          >
+            <input
+              id="deposit-amount"
+              class="block w-10/12 p-2 outline-none text-xl text-black"
+              type="text"
+              placeholder="Enter your Deposit amount"
+            />
+            <button
+              id="deposit-btn"
+              class="bg-indigo-600 text-white px-8 py-2 text-xl rounded-lg hover:bg-indigo-800"
+            >
+              Deposit
+            </button>
+          </div>
+          <div
+            class="bg-emerald-500 p-5 rounded-lg flex justify-center items-center gap-2"
+          >
+            <input
+              id="withdraw-amount"
+              class="block w-10/12 p-2 outline-none text-xl text-black"
+              type="text"
+              placeholder="Enter your Withdraw amount"
+            />
+            <button
+              id="withdraw-btn"
+              class="bg-indigo-600 text-white px-8 py-2 text-xl rounded-lg hover:bg-indigo-800"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./bank.js"></script>
+  </body>
+</html>
